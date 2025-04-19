@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ひらがなことばゲーム</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <style>
+    body { margin:0; overflow:hidden; }
+    .btn {
+      position:absolute; top:10px; padding:8px 12px; font-size:16px; z-index:10;
+      background:#fff; border:1px solid #ccc; border-radius:4px; cursor:pointer;
+    }
+    #modeButton { left:10px; }
+    #resetButton { right:10px; }
+    #uiContainer {
+      position:absolute; top:50px; left:10px; z-index:10;
+      background: rgba(255,255,255,0.8); padding:8px; border-radius:4px;
+    }
+    #wordInput { font-size:16px; padding:4px; }
+    #startButton { font-size:16px; padding:4px 8px; }
+  </style>
+</head>
+<body>
+  <button id="modeButton" class="btn">板モード：OFF</button>
+  <button id="resetButton" class="btn">リセット</button>
+  <div id="uiContainer">
+    <input id="wordInput" placeholder="例：すいか">
+    <button id="startButton">開始</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
